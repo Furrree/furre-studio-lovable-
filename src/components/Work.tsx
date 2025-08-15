@@ -13,6 +13,7 @@ const projects = [
     liveUrl: "https://aurora-boutique-demo.com",
     githubUrl: "https://github.com/furrealfread/aurora-boutique",
     caseStudy: "Increased conversion rates by 45% through strategic UX improvements and optimized checkout flow. Implemented micro-interactions that enhanced user engagement and reduced cart abandonment by 30%.",
+    slug: "aurora-boutique",
   },
   {
     title: "Nebula Studios",
@@ -22,6 +23,7 @@ const projects = [
     liveUrl: "https://nebula-studios-demo.com",
     githubUrl: "https://github.com/furrealfread/nebula-studios",
     caseStudy: "Developed an award-winning portfolio that helped the agency increase client inquiries by 200%. The scroll-triggered animations and video integration created an immersive storytelling experience.",
+    slug: "nebula-studios",
   },
   {
     title: "Pulse Analytics",
@@ -31,6 +33,7 @@ const projects = [
     liveUrl: "https://pulse-analytics-demo.com",
     githubUrl: "https://github.com/furrealfread/pulse-analytics",
     caseStudy: "Built a scalable analytics platform handling 1M+ data points in real-time. The intuitive interface and powerful filtering capabilities improved user productivity by 60% and reduced time-to-insight significantly.",
+    slug: "pulse-analytics",
   },
 ];
 

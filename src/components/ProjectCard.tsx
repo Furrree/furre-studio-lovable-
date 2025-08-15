@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 interface ProjectCardProps {
   title: string;
@@ -12,6 +13,7 @@ interface ProjectCardProps {
   githubUrl: string;
   caseStudy: string;
   index: number;
+  slug: string;
 }
 
 export const ProjectCard = ({
@@ -23,7 +25,9 @@ export const ProjectCard = ({
   githubUrl,
   caseStudy,
   index,
+  slug,
 }: ProjectCardProps) => {
+  const navigate = useNavigate();
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -45,19 +49,10 @@ export const ProjectCard = ({
               <Button
                 size="sm"
                 className="bg-gradient-primary hover:shadow-neon text-primary-foreground"
-                onClick={() => window.open(liveUrl, '_blank')}
+                onClick={() => navigate(`/projects/${slug}`)}
               >
-                <ExternalLink className="h-4 w-4 mr-1" />
-                Live
-              </Button>
-              <Button
-                size="sm"
-                variant="outline"
-                className="border-border hover:bg-dark-surface"
-                onClick={() => window.open(githubUrl, '_blank')}
-              >
-                <Github className="h-4 w-4 mr-1" />
-                Code
+                <ArrowRight className="h-4 w-4 mr-1" />
+                View Project
               </Button>
             </div>
           </div>
