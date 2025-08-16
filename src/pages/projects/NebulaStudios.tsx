@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, ExternalLink, Github } from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import nebulaStudiosImg from "@/assets/nebula-studios.jpg";
 
@@ -67,15 +67,7 @@ const NebulaStudios = () => {
                     onClick={() => navigate('/demos/nebula-studios')}
                   >
                     <ExternalLink className="h-4 w-4 mr-2" />
-                    View Live Site
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="border-border hover:bg-dark-surface"
-                    onClick={() => window.open('https://github.com/furrealfread/nebula-studios', '_blank')}
-                  >
-                    <Github className="h-4 w-4 mr-2" />
-                    View Code
+                    View Live Demo
                   </Button>
                 </div>
 
