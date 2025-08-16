@@ -64,7 +64,7 @@ const AuroraBoutique = () => {
                 <div className="flex gap-4 mb-8">
                   <Button
                     className="bg-gradient-primary hover:shadow-neon text-primary-foreground"
-                    onClick={() => window.open('https://commerce-ui.com/work/nour-hammour-hydrogen-shopify', '_blank')}
+                    onClick={() => navigate('/demos/aurora-boutique')}
                   >
                     <ExternalLink className="h-4 w-4 mr-2" />
                     View Live Site

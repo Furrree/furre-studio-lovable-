@@ -64,7 +64,7 @@ const PulseAnalytics = () => {
                 <div className="flex gap-4 mb-8">
                   <Button
                     className="bg-gradient-primary hover:shadow-neon text-primary-foreground"
-                    onClick={() => window.open('https://www.octoboard.com/real-time-business-dashboard-live', '_blank')}
+                    onClick={() => navigate('/demos/pulse-analytics')}
                   >
                     <ExternalLink className="h-4 w-4 mr-2" />
                     View Live Site

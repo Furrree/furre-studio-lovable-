@@ -4,10 +4,13 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
-import NotFound from "./pages/NotFound";
 import AuroraBoutique from "./pages/projects/AuroraBoutique";
 import NebulaStudios from "./pages/projects/NebulaStudios";
 import PulseAnalytics from "./pages/projects/PulseAnalytics";
+import AuroraBoutiqueDemo from "./pages/demos/AuroraBoutiqueDemo";
+import NebulaStudiosDemo from "./pages/demos/NebulaStudiosDemo";
+import PulseAnalyticsDemo from "./pages/demos/PulseAnalyticsDemo";
+import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
@@ -22,7 +25,9 @@ const App = () => (
           <Route path="/projects/aurora-boutique" element={<AuroraBoutique />} />
           <Route path="/projects/nebula-studios" element={<NebulaStudios />} />
           <Route path="/projects/pulse-analytics" element={<PulseAnalytics />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/demos/aurora-boutique" element={<AuroraBoutiqueDemo />} />
+          <Route path="/demos/nebula-studios" element={<NebulaStudiosDemo />} />
+          <Route path="/demos/pulse-analytics" element={<PulseAnalyticsDemo />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
