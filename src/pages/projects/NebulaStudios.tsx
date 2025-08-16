@@ -64,7 +64,7 @@ const NebulaStudios = () => {
                 <div className="flex gap-4 mb-8">
                   <Button
                     className="bg-gradient-primary hover:shadow-neon text-primary-foreground"
-                    onClick={() => window.open('https://nebula-studios-demo.com', '_blank')}
+                    onClick={() => window.open('https://www.14islands.com/work/myriad', '_blank')}
                   >
                     <ExternalLink className="h-4 w-4 mr-2" />
                     View Live Site
