@@ -11,6 +11,7 @@ import AuroraBoutiqueDemo from "./pages/demos/AuroraBoutiqueDemo";
 import NebulaStudiosDemo from "./pages/demos/NebulaStudiosDemo";
 import PulseAnalyticsDemo from "./pages/demos/PulseAnalyticsDemo";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/projects/aurora-boutique" element={<AuroraBoutique />} />

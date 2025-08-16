@@ -46,11 +46,13 @@ export const ProjectCard = ({
           <div className="absolute inset-0 bg-gradient-to-t from-dark-surface/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           <div className="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <div className="flex space-x-2">
-              <Button
-                size="sm"
-                className="bg-gradient-primary hover:shadow-neon text-primary-foreground"
-                onClick={() => navigate(`/projects/${slug}`)}
-              >
+                <Button
+                  size="sm"
+                  className="bg-gradient-primary hover:shadow-neon text-primary-foreground"
+                  onClick={() => {
+                    navigate(`/projects/${slug}`);
+                  }}
+                >
                 <ArrowRight className="h-4 w-4 mr-1" />
                 View Project
               </Button>
